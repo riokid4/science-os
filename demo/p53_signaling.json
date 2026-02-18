@@ -1,0 +1,65 @@
+[
+  {
+    "type": "Phosphorylation",
+    "enz": {
+      "name": "ATM",
+      "db_refs": {"UP": "Q13315", "HGNC": "795"}
+    },
+    "sub": {
+      "name": "TP53",
+      "db_refs": {"UP": "P04637", "HGNC": "11998"}
+    },
+    "residue": "S",
+    "position": "15",
+    "evidence": [
+      {
+        "source_api": "reach",
+        "pmid": "9724731",
+        "text": "ATM phosphorylates p53 at serine 15",
+        "annotations": {
+          "species": {"name": "human"},
+          "cell_line": {"name": "HCT116"}
+        },
+        "epistemics": {"direct": 0.95}
+      }
+    ]
+  },
+  {
+    "type": "Activation",
+    "subj": {
+      "name": "TP53",
+      "db_refs": {"UP": "P04637", "HGNC": "11998"}
+    },
+    "obj": {
+      "name": "CDKN1A",
+      "db_refs": {"UP": "P38936", "HGNC": "1784"}
+    },
+    "evidence": [
+      {
+        "source_api": "reach",
+        "pmid": "8242752",
+        "annotations": {"species": {"name": "human"}},
+        "epistemics": {"direct": 0.92}
+      }
+    ]
+  },
+  {
+    "type": "Inhibition",
+    "subj": {
+      "name": "MDM2",
+      "db_refs": {"UP": "Q00987", "HGNC": "6973"}
+    },
+    "obj": {
+      "name": "TP53",
+      "db_refs": {"UP": "P04637", "HGNC": "11998"}
+    },
+    "evidence": [
+      {
+        "source_api": "reach",
+        "pmid": "8293284",
+        "annotations": {"species": {"name": "human"}},
+        "epistemics": {"direct": 0.90}
+      }
+    ]
+  }
+]
